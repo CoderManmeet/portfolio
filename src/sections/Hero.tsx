@@ -51,7 +51,7 @@ export default function Hero() {
         </motion.p>
 <h1
           ref={nameRef}
-          className="text-5xl md:text-7xl font-bold mb-4 flex flex-wrap justify-center"
+          className="text-5xl md:text-7xl font-bold mb-4 flex justify-center whitespace-nowrap"
         >
           {NAME.split('').map((char, i) => (
             <span key={i} className="inline-block text-gradient">

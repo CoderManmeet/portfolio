@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { User } from 'lucide-react';
+import Image from 'next/image';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -20,9 +21,17 @@ export default function About() {
           className="relative mx-auto w-64 h-64 md:w-80 md:h-80"
         >
           <div className="absolute inset-0 rounded-full bg-gradient-to-br from-accent to-accent-dark blur-2xl opacity-30" />
-          <div className="relative w-full h-full rounded-full glass flex items-center justify-center overflow-hidden">
+          {/* <div className="relative w-full h-full rounded-full glass flex items-center justify-center overflow-hidden">
             <User size={96} className="text-muted" />
-          </div>
+          </div> */}
+          <div className="relative w-full h-full rounded-full glass overflow-hidden">
+  <Image
+    src="/images/manmeet.jpeg"
+    alt="Manmeet Singh"
+    fill
+    className="object-cover hover:scale-110 transition-transform duration-700"
+  />
+</div>
         </motion.div>
 
         <motion.div
@@ -44,7 +53,7 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="text-3xl md:text-4xl font-bold mb-6"
           >
-            Turning ideas into reliable, polished software
+            Building scalable digital experiences that create real impact
           </motion.h2>
 
           <motion.p
@@ -52,10 +61,13 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="text-muted leading-relaxed mb-4"
           >
-            I am a full-stack developer who enjoys taking a product from a rough idea
-            all the way to a smooth, production-ready experience. I care about clean
-            code, thoughtful interfaces, and the small details that make software feel
-            effortless to use.
+           I am a full-stack developer focused on 
+           building modern, scalable, and 
+           user-friendly web applications. 
+           From responsive frontends to robust 
+           backend systems, I enjoy transforming 
+           ideas into polished digital products 
+           that deliver real value.
           </motion.p>
 
           <motion.p
@@ -63,19 +75,39 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="text-muted leading-relaxed mb-4"
           >
-            My goal is to keep growing as an engineer by working on projects that
-            challenge me to learn new tools, write better architecture, and ship work
-            I am proud of, while collaborating closely with teams and users.
+            Driven by continuous growth and innovation, 
+            I constantly explore new technologies, 
+            frameworks, and development practices. 
+            My goal is not just to write code, but to 
+            create impactful software that helps businesses 
+            grow and users achieve more.
           </motion.p>
 
-          <motion.p
+          {/* <motion.p
             variants={fadeUp}
             transition={{ duration: 0.6 }}
             className="text-muted leading-relaxed"
           >
             Outside of writing code, I spend time exploring new frameworks, refining
             my design eye, and contributing to projects that push my skills further.
-          </motion.p>
+          </motion.p> */}
+
+          <div className="grid grid-cols-3 gap-6 mt-8">
+  <div>
+    <h3 className="text-2xl font-bold text-accent">10+</h3>
+    <p className="text-sm text-muted">Projects Built</p>
+  </div>
+
+  <div>
+    <h3 className="text-2xl font-bold text-accent">3+</h3>
+    <p className="text-sm text-muted">Client Projects</p>
+  </div>
+
+  <div>
+    <h3 className="text-2xl font-bold text-accent">100%</h3>
+    <p className="text-sm text-muted">Commitment</p>
+  </div>
+</div>
         </motion.div>
       </div>
     </section>

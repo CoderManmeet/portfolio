@@ -9,12 +9,12 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 const SITE_URL = "https://your-portfolio-domain.vercel.app";
-const SITE_NAME = "Your Name";
+const SITE_NAME = "Manmeet Singh";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} | Full-Stack Developer`,
+    default: `${SITE_NAME} `,
     template: `%s | ${SITE_NAME}`,
   },
   description:
