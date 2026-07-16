@@ -1,6 +1,7 @@
 ﻿'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { projects } from '@/data/projects';
 import { GithubIcon, ExternalLinkIcon } from '@/components/icons';
 
@@ -39,10 +40,22 @@ export default function Projects() {
               whileHover={{ scale: 1.03, y: -6 }}
               className="glass rounded-2xl overflow-hidden border border-border"
             >
-              <div className="h-40 bg-gradient-to-br from-accent/30 to-accent-dark/30 flex items-center justify-center">
-                <span className="text-4xl font-bold text-foreground/20">
-                  {String(i + 1).padStart(2, '0')}
-                </span>
+              <div className="h-40 relative overflow-hidden bg-gradient-to-br from-accent/30 to-accent-dark/30">
+                {project.image ? (
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center">
+                    <span className="text-4xl font-bold text-foreground/20">
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
+                  </div>
+                )}
               </div>
 
               <div className="p-6">
