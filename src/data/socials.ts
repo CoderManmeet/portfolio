@@ -10,6 +10,6 @@ export interface SocialLink {
 
 export const socialLinks: SocialLink[] = [
   { label: 'GitHub', href: 'https://github.com/CoderManmeet', icon: GithubIcon },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/manmeet-codes/', icon: LinkedinIcon },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/manmeetcodess/', icon: LinkedinIcon },
   { label: 'Email', href: 'mailto:manmeet00002006@gmail.com', icon: Mail },
 ];
