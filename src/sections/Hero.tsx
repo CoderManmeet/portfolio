@@ -97,7 +97,7 @@ export default function Hero() {
           >
             Get In Touch
           </button>
-          <a href="/resume.pdf"
+          <a href="/resumee.pdf"
             download
             className="flex items-center gap-2 text-muted hover:text-accent transition-colors px-2"
           >
