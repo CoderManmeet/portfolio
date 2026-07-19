@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-border mt-20">
       <div className="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
-        <p className="text-sm text-muted">(c) {year} Your Name. All rights reserved.</p>
+        <p className="text-sm text-muted">(c) {year} Manmeet Singh. All rights reserved.</p>
 
         <div className="flex items-center gap-5">
           {socialLinks.map((social) => {
